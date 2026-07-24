@@ -1,0 +1,621 @@
+/* =========================
+   Tablet & Mobile (1024px)
+========================= */
+@media screen and (max-width: 1024px) {
+
+    /* Hide desktop nav */
+    .nav-text,
+    .subscribe-button {
+        display: none;
+    }
+
+    /* Show hamburger */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .mobile-menu-panel {
+        width: 35%;
+    }
+
+    .mobile-subscribe-btn {
+        padding: 14px 10px;
+        font-size: 14px;
+    }
+
+    /* Hero */
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-section {
+        padding-block: 100px 60px;
+    }
+
+    .hero-title {
+        font-size: clamp(3.5rem, 7vw, 5rem);
+        margin-top: 30px;
+    }
+
+    .hero-desc {
+        width: 100%;
+        font-size: 20px;
+        margin-block: 24px;
+    }
+
+    .hero-image-wrap {
+        transform: rotate(0deg);
+    }
+
+    .image-box {
+        width: 100%;
+        height: 420px;
+        top: 0;
+    }
+
+    .featured-badge {
+        top: -14px;
+        right: -4px;
+    }
+
+    .btn-dark,
+    .btn-light {
+        font-size: 17px;
+        padding: 14px 26px;
+    }
+
+    /* Articles */
+    .left {
+        width: 64%;
+    }
+
+    .right {
+        width: 34%;
+    }
+
+    .title {
+        gap: 12%;
+        margin-bottom: 35px;
+    }
+
+    .title h2 {
+        font-size: 45px;
+    }
+
+    .fresh-badge {
+        font-size: 13px;
+        width: 155px;
+        padding: 7px 8px;
+    }
+
+    .left-card h3 {
+        font-size: 20px;
+    }
+
+    .left-card p {
+        font-size: 18px;
+    }
+
+    .img img {
+        width: 130px;
+        height: 110px;
+    }
+
+    .trending-now h4,
+    .categories h4 {
+        font-size: 26px;
+        margin-bottom: 18px;
+    }
+
+    .trend-content span {
+        font-size: 32px;
+    }
+
+    .trend-content h5 {
+        font-size: 15px;
+    }
+
+    .button {
+        font-size: 16px;
+        padding: 14px 36px;
+    }
+}
+
+/* =========================
+   Tablets (768px)
+========================= */
+@media screen and (max-width: 768px) {
+
+    .mobile-menu-panel {
+        width: 50%;
+    }
+
+    /* Hero */
+    .hero-section {
+        padding-block: 90px 50px;
+    }
+
+    .hero-title {
+        font-size: clamp(3.5rem, 10vw, 5rem);
+    }
+
+    .hero-desc {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .image-box {
+        width: 100%;
+        height: 360px;
+        top: 0;
+    }
+
+    .shape-3 {
+        display: none;
+    }
+
+    .featured-badge {
+        top: -14px;
+        right: 4px;
+        font-size: 0.9rem;
+    }
+
+    /* Articles */
+    .latest-articles .container {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .two-cards {
+        position: static;
+    }
+
+    /* title + fresh-badge on same row */
+    .title {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .title h2 {
+        font-size: 36px;
+    }
+
+    /* card stacks vertically */
+    .card {
+        flex-direction: column;
+    }
+
+    /* .img img {
+        width: 165px;
+        height: 200px;
+        margin-top: 0;
+    } */
+
+    .right-card {
+        width: 100%;
+    }
+    .new{
+        top: -10px;
+        right:79%;
+    }
+    .hot{
+        top: -10px;
+        right: 79.2%;
+    }
+    .viral{
+        top: 1px;
+        right: 79%;
+    }
+    /* spans stay in a row, wrap if needed */
+    .spans {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+}
+
+/* =========================
+   Small Phones (480px)
+========================= */
+@media screen and (max-width: 480px) {
+
+    .navbar .container {
+        padding: 10px 8px;
+    }
+
+    .nav {
+        padding: 12px 16px;
+        border-radius: 16px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .hamburger {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+    }
+
+    .mobile-menu-panel {
+        width: 65%;
+        padding: 20px;
+    }
+
+    .mobile-title {
+        font-size: 1.2rem;
+    }
+
+    .mobile-nav a {
+        font-size: 1rem;
+    }
+
+    .mobile-subscribe-btn {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    /* Hero */
+    .hero-section {
+        padding-block: 80px 40px;
+    }
+
+    .hero-title {
+        font-size: clamp(2.8rem, 13vw, 3.5rem);
+        margin-top: 20px;
+    }
+
+    .trending-badge {
+        font-size: 12px;
+        width: 135px;
+        padding: 10px 12px;
+        top: 15px;
+    }
+
+    .shape-1 {
+        width: 100px;
+        height: 90px;
+        top: 50px;
+        left: 20px;
+    }
+
+    .shape-2 {
+        width: 70px;
+        height: 70px;
+        top: 135px;
+        right: 65px;
+    }
+
+    .hero-desc {
+        font-size: 1rem;
+        width: 100%;
+        margin-block: 20px;
+        font-size: 19px;
+    }
+
+    .hero-buttons {
+        gap: 14px;
+        align-items: center;
+        justify-content: center;
+        margin-block: 20px;
+    }
+
+    .btn-dark,
+    .btn-light {
+        font-size: 13px;
+        padding: 12px 20px;
+    }
+
+    .image-box {
+        width: 100%;
+        height: 270px;
+        top: 0;
+    }
+
+    .featured-badge {
+        font-size: 0.8rem;
+        top: -12px;
+        right: 2px;
+        padding: 8px 12px;
+    }
+
+    /* Articles */
+    .latest-articles {
+        padding-block: 60px;
+    }
+    
+    /* hide fresh-badge on small phones */
+    .fresh-badge {
+        display: none;
+    }
+
+    .title {
+        margin-bottom: 20px;
+    }
+
+    .title h2 {
+        font-size: 36px;
+        font-weight: 900;
+    }
+
+    /* card: image full width on top, text below */
+    .card {
+        flex-direction: column;
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .right-card {
+        width: 100%;
+    }
+/* 
+    .img img {
+        width: 100%;
+        height: 200px;
+        margin-top: 0;
+    } */
+
+    .left-card h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .left-card p {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+
+    .spans {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .spans span {
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .new{
+        top: -5px;
+        right: 56.5%;
+        padding: 2px 6px;
+    }
+    .hot{
+        top: -10px;
+        right: 59.5%;
+        padding: 2.5px 4px;
+    }
+    .viral{
+        top: 1px;
+        right: 59.5%;
+        padding: 2.5px 4px;
+    }
+    .trending-now h4,
+    .categories h4 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .trend-content span {
+        font-size: 28px;
+    }
+
+    .trend-content h5 {
+        font-size: 14px;
+    }
+
+    .trend-content p {
+        font-size: 12px;
+    }
+
+    .cat-labels span {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+}
+
+/* =========================
+   Small Phones (375px)
+========================= */
+@media screen and (max-width: 375px) {
+
+    /* Hero */
+    .hero-title {
+        font-size: clamp(2.5rem, 14vw, 3.5rem);
+    }
+
+    .trending-badge {
+        font-size: 11px;
+        width: 120px;
+        padding: 9px 10px;
+    }
+
+    .hero-desc {
+        font-size: 0.95rem;
+        width: 100%;
+    }
+
+    .image-box {
+        width: 100%;
+        height: 240px;
+    }
+
+    .btn-dark,
+    .btn-light {
+        padding: 10px 18px;
+        font-size: 12px;
+    }
+
+    .featured-badge {
+        font-size: 0.75rem;
+        padding: 7px 10px;
+        top: -12px;
+        right: 1px;
+    }
+
+    /* Articles */
+    .fresh-badge {
+        display: none;
+    }
+
+    .title h2 {
+        font-size: 24px;
+    }
+
+    .img img {
+        height: 180px;
+    }
+    /* .new{
+        top: -8px;
+        right:22%;
+        padding: 2px 3px;
+    }
+    .hot{
+        top: -10px;
+        right: 61.2%;
+        padding: 2.5px 4px;
+    }
+    .viral{
+        top: 1px;
+        right: 62%;
+        padding: 2.5px 4px;
+    } */
+    .left-card h3 {
+        font-size: 16px;
+    }
+
+    .left-card p {
+        font-size: 13px;
+    }
+
+    .card {
+        padding: 14px;
+    }
+
+    .button {
+        font-size: 8px;
+        padding: 7px 10px;
+    }
+}
+
+/* =========================
+   Very Small Phones (320px)
+========================= */
+@media screen and (max-width: 320px) {
+
+    .logo {
+        font-size: 17px;
+    }
+
+    .nav {
+        padding: 10px 12px;
+    }
+
+    .mobile-menu-panel {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Hero */
+    .hero-title {
+        font-size: clamp(2.2rem, 13vw, 3rem);
+    }
+
+    .hero-desc {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .btn-dark,
+    .btn-light {
+        font-size: 11px;
+        padding: 10px 16px;
+    }
+
+    .image-box {
+        width: 100%;
+        height: 210px;
+    }
+
+    .featured-badge {
+        font-size: 0.72rem;
+        top: -10px;
+        right: 2px;
+        padding: 6px 10px;
+    }
+
+    /* Articles */
+    .fresh-badge {
+        display: none;
+    }
+
+    .title h2 {
+        font-size: 22px;
+    }
+
+    .img img {
+        height: 100px;
+    }
+
+    .left-card h3 {
+        font-size: 15px;
+    }
+
+    .left-card p {
+        font-size: 12px;
+    }
+
+    .new{
+        top: -5px;
+        right: 46%;
+        padding: 2px 6px;
+    }
+    .hot{
+        top: -5px;
+        right: 46%;
+        padding: 2px 6px;
+    }
+    .viral{
+        top: 2px;
+        right: 46%;
+        padding: 2px 6px;
+    }
+
+    .trending-now h4,
+    .categories h4 {
+        font-size: 20px;
+    }
+
+    .trend-content span {
+        font-size: 24px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+}
