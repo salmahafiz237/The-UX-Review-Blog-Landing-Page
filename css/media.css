@@ -128,6 +128,22 @@
         font-size: 16px;
         padding: 14px 36px;
     }
+
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .articles-sidebar {
+        position: static;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+
+    /* Authors: 2 columns */
+    .authors-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* =========================
@@ -215,18 +231,22 @@
     .right-card {
         width: 100%;
     }
-    .new{
+
+    .new {
         top: -10px;
-        right:79%;
+        right: 79%;
     }
-    .hot{
+
+    .hot {
         top: -10px;
         right: 79.2%;
     }
-    .viral{
+
+    .viral {
         top: 1px;
         right: 79%;
     }
+
     /* spans stay in a row, wrap if needed */
     .spans {
         flex-direction: row;
@@ -234,6 +254,28 @@
         gap: 12px 20px;
     }
 
+    /* Authors: 1 column */
+    .authors-grid {
+        grid-template-columns: 1fr;
+        /* max-width: 420px; */
+        margin: 0 auto;
+    }
+
+    .authors-container {
+        padding: 0 16px;
+    }
+
+    .author-role-badge {
+        top: -10px;
+        right: -270px;
+    }
+
+    .authors-header {
+        text-align: center;
+        margin-bottom: 45px;
+        font-weight: 900;
+        font-size: 2.1rem;
+    }
 }
 
 /* =========================
@@ -346,7 +388,7 @@
     .latest-articles {
         padding-block: 60px;
     }
-    
+
     /* hide fresh-badge on small phones */
     .fresh-badge {
         display: none;
@@ -371,7 +413,8 @@
     .right-card {
         width: 100%;
     }
-/* 
+
+    /* 
     .img img {
         width: 100%;
         height: 200px;
@@ -397,21 +440,25 @@
         font-size: 10px;
         font-weight: 600;
     }
-    .new{
+
+    .new {
         top: -5px;
         right: 56.5%;
         padding: 2px 6px;
     }
-    .hot{
+
+    .hot {
         top: -10px;
         right: 59.5%;
         padding: 2.5px 4px;
     }
-    .viral{
+
+    .viral {
         top: 1px;
         right: 59.5%;
         padding: 2.5px 4px;
     }
+
     .trending-now h4,
     .categories h4 {
         font-size: 22px;
@@ -435,12 +482,73 @@
         font-size: 14px;
     }
 
+    /* Authors */
+    .authors-section {
+        padding: 48px 0;
+    }
+
+    .authors-container {
+        padding: 0 12px;
+    }
+
+    .author-name {
+        font-size: 1.3rem;
+    }
+
+    .authors-header {
+        font-weight: 800;
+        font-size: 1.4rem;
+    }
+
+    .authors-subtitle {
+        font-size: 1rem;
+    }
+
+    .authors-divider {
+        width: 115px;
+        height: 6px;
+    }
+
+    .author-card {
+        padding: 30px 10px;
+    }
+
+    .author-avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .author-name {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .author-role {
+        font-size: 0.8rem;
+    }
+
+    .author-bio {
+        font-size: 0.8rem;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .author-role-badge {
+        top: -12px;
+        right: -120px;
+        padding: 2px 6px;
+        font-size: 0.61rem;
+        font-weight: 700;
+    }
 }
 
 /* =========================
    Small Phones (375px)
 ========================= */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
 
     /* Hero */
     .hero-title {
@@ -488,21 +596,7 @@
     .img img {
         height: 180px;
     }
-    /* .new{
-        top: -8px;
-        right:22%;
-        padding: 2px 3px;
-    }
-    .hot{
-        top: -10px;
-        right: 61.2%;
-        padding: 2.5px 4px;
-    }
-    .viral{
-        top: 1px;
-        right: 62%;
-        padding: 2.5px 4px;
-    } */
+
     .left-card h3 {
         font-size: 16px;
     }
@@ -518,6 +612,10 @@
     .button {
         font-size: 8px;
         padding: 7px 10px;
+    }
+
+    .author-role-badge {
+        right: -100px;
     }
 }
 
@@ -588,17 +686,19 @@
         font-size: 12px;
     }
 
-    .new{
+    .new {
         top: -5px;
         right: 46%;
         padding: 2px 6px;
     }
-    .hot{
+
+    .hot {
         top: -5px;
         right: 46%;
         padding: 2px 6px;
     }
-    .viral{
+
+    .viral {
         top: 2px;
         right: 46%;
         padding: 2px 6px;
@@ -618,4 +718,11 @@
         padding: 10px 12px;
     }
 
+    .author-role-badge {
+        top: -12px;
+        right: -80px;
+        padding: 2px 6px;
+        font-size: 0.61rem;
+        font-weight: 700;
+    }
 }
